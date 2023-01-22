@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="wav.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+
+body {
+
+font-family: "Lato", sans-serif;
+transition: background-color .5s;
+}
+
+.left {
+float: left;
+
+}
+
+.name{
+font-family: Garamond, serif;
+;
+text-align: center;
+}
+
+.topright {
+  float: right;
+
+}
+
+.level {
+font-family: Garamond, serif;
+text-decoration: none;
+color: burlywood;
+}
+.icons {
+margin-top: -20px;
+
+}
+.icons i{
+font-size: 22px;
+margin: 10px;
+cursor: pointer;
+
+}
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: white;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: black;
+display: block;
+transition: 0.3s;
+}
+
+.sidenav a:hover {
+color: royalblue;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+#main {
+transition: margin-left .5s;
+padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+  .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 1500px;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3{
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+  margin: 0 10px;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.socials a i{
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color .4s ease;
+}
+
+.socials a:hover i{
+  color: aqua;
+}
+
+
+.footer-bottom{
+  background: #000;
+  width: 1400px;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.footer-bottom p{
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom p a{
+ color:#44bae8;
+ font-size: 16px;
+ text-decoration: none;
+}
+.footer-bottom span{
+   text-transform: uppercase;
+   opacity: .4;
+   font-weight: 200;
+}
+
+.contain {
+  position: relative;
+  text-align: center;
+  
+}
+
+.center {
+    font-size: 70px;
+    color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center p{
+
+    
+    font-size: 30px;
+}
+
+</style>
+</head>
+<body style="color: burlywood; background-color: white;">
+    <div class="nav">
+        <div class="name"> 
+            <a href="index.html" class="level"  style="font-size: 25px;">Oze Foods</a>
+        </div>
+
+    <div class="topright">
+        <div class="icons">
+            <a href="#"><i class="fa fa-search" style="font-size:20px;color: burlywood;"></i></a>
+            <a href="login.html" target="_blank"><i class="fa fa-fw fa-user" style="font-size:20px;color:burlywood;"></i></a>
+            <a href="#"><i class="fa fa-shopping-cart" style="font-size:20px;color:burlywood;"></i></a>
+        </div>
+    </div>
+
+        <div class="left">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="local.html">Local Dishes</a>
+                    <a href="int.html">International Dishes</a>
+                        <div class="anonr">
+                            <a href="#" style="font-size: small;">small chops</a>
+                            <a href="#" style="font-size: small;">Chicken</a>
+                            <a href="#" style="font-size: small;">Fancy meals</a>
+                            <div class="dropdown">
+                                <button style="font-size: small; margin-left: 18px; margin-top: -2px;" class="dropbtn" >Pages 
+                                  <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div  class="dropdown-content">
+                                  <a href="about.html" style="font-size: small;">About Us</a>
+                                  <a href="contact.html" style="font-size: small;">Contact Us </a>
+                                  <a href="#" style="font-size: small;">Blog </a>
+                                  <a href="#" style="font-size: small;">Wishlist </a>
+                                  <a href="#" style="font-size: small;">CV </a>
+                                </div>
+                              </div>
+                        </div>
+                </div>
+                
+                <div id="main">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                </div>
+
+               
+        </div>
+    </div>      
+
+
+    <div class="contain">
+        <img src="rest.jpg" width="100%">
+
+        <div class="center">About Us<p> We offer the best meals localy, internationaly and combo deals.<br> Come and get the best flavours and tastes you have ever had <br>Eat from Oze foods and make your friends wonder what smells so good ;).</p></div>
+        
+    </div>
+
+    
+
+    <script>
+        
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+        </script>
+    
+                <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    document.getElementById("main").style.marginLeft = "250px";
+                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                }
+                
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    document.getElementById("main").style.marginLeft= "0";
+                    document.body.style.backgroundColor = "white";
+                }
+                </script>
+
+
+
+
+<footer>
+
+    <div class="footer-content">
+      <h3 style="font-family: 'Trebuchet MS', sans-serif;">Oze Foods</h3>
+
+      <p>Food that makes you rub your belly and you never regret the money spent ;).</p>
+
+
+      
+     
+  </div>
+
+  <ul class="socials">
+    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+ </ul>
+
+ <div class="footer-bottom">
+  <p>copyright &copy;2023 <a href="#">David-Nwanne</a>  </p>
+
+
+</div>
+
+  </footer>
+
+
+
+
+</body>
